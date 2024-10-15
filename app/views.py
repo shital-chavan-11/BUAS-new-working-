@@ -192,3 +192,7 @@ def logout_view(request):
 @login_required
 def index_view(request):
     return render(request, 'index.html')  # Render the dashboard template
+@login_required
+def dashboard_view(request):
+    return render(request, 'dashboard.html')  # Render the dashboard template
+
